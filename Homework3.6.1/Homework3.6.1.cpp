@@ -2,13 +2,13 @@
 //
 
 #include <iostream>
-#include "Header.h"
+#include "Math.h"
 
 int main()
 {
     setlocale(LC_ALL, "Russian");
 
-    double a, b, operation, result;
+    double a, b, operation, result = 0;
     std::string name;
 
     std::cout << "Введите первое число: ";
@@ -25,7 +25,7 @@ int main()
     if (operation == 2)
     {
         name = " минус ";
-        result = summary(a, b);
+        result = substract(a, b);
     }
     if (operation == 3)
     {
